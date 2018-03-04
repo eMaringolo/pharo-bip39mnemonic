@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "EstebanMaringolo 11/28/2017 15:53",
+	"super" : "Object",
+	"category" : "BIP39Mnemonic-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BIP39MnemonicTranslator",
+	"type" : "normal"
+}

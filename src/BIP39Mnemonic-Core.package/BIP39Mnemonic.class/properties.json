@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "EstebanMaringolo 3/4/2018 10:07",
+	"super" : "Object",
+	"category" : "BIP39Mnemonic-Core",
+	"classinstvars" : [
+		"words"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"language",
+		"size",
+		"bits"
+	],
+	"name" : "BIP39Mnemonic",
+	"type" : "normal"
+}

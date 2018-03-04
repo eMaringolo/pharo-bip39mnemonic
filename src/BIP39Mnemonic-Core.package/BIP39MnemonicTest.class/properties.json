@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "BIP39Mnemonic-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"vectors"
+	],
+	"name" : "BIP39MnemonicTest",
+	"type" : "normal"
+}
