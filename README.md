@@ -1,7 +1,7 @@
 # pharo-bip39mnemonic
 Simple implementation of Bitcoin's BIP39 mnemonic and seed generator using the [reference implementation](https://github.com/trezor/python-mnemonic) as guide.
 
-*Personal disclaimer*: This is a personal experimentation to learn by practice how the entropy, mnemonic, seeds, etc., works internally. It includes pasing tests taken from the reference implementation as well.
+*Personal disclaimer*: This is a personal experimentation to learn by practice how the entropy, mnemonic, seeds, etc., works internally. It includes passing tests taken from the reference implementation as well (vectors, checksum, instantiation from different sources, languages, etc.).
 
 ## Installation
 
