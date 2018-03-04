@@ -1,5 +1,5 @@
 tests
-testWordsFromEntropy
+testVectors
 	self vectors
 		do: [ :v | 
 			| mnemonic |

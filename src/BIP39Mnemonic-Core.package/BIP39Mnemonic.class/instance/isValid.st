@@ -7,4 +7,4 @@ isValid
 		^false ].
 	(words allSatisfy: [:word | (self wordsIn: self language) includes: word ])
 		ifFalse: [ ^false ].
-	^true
+	^self hasValidChecksum

@@ -1,4 +1,4 @@
-instance creation
+assertions
 assertWordCount: count
 	((12 to: 24 by: 3) includes: count)
 		ifFalse: [ self

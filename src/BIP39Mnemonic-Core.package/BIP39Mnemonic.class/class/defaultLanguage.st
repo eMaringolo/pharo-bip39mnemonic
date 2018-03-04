@@ -1,3 +1,3 @@
-instance creation
+utilities
 defaultLanguage
 	^ 'english'
