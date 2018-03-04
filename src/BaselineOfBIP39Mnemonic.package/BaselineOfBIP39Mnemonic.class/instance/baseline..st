@@ -4,13 +4,17 @@ baseline: spec
 	spec
 		for: #common
 		do: [ spec
-				project: 'PBKDF2'
+				configuration: 'OpenSSL'
 				with: [ spec
-						repository: 'http://smalltalkhub.com/mc/UdoSchneider/PBKDF2/main' ].
-			spec
-				project: 'OpenSSL'
-				with: [ spec
+						className: #BaselineOfOpenSSL;
 						repository: 'github://PierceNg/OpenSSL-Pharo/src-st' ].
 			spec
+				project: 'PBKDF2'
+				with: [ spec
+						className: #ConfigurationOfPBKDF2;
+						repository: 'http://smalltalkhub.com/mc/UdoSchneider/PBKDF2/main' ].
+			spec
 				package: 'BIP39Mnemonic-Core'
-				with: [ spec requires: #('PBKDF2' 'OpenSSL') ] ]
+				with: [ spec
+						repository: 'github://eMaringolo/pharo-bip39mnemonic/src';
+						requires: #('PBKDF2' 'OpenSSL') ] ]
