@@ -3,11 +3,21 @@ baseline: spec
 	<baseline>
 	spec
 		for: #common
-		do: [ spec
-				configuration: 'OpenSSL'
+		do: [ 
+			spec 
+				project: 'NeoJSON'
+				with: [ 
+					spec 
+						repository: 'http://mc.stfx.eu/Neo';
+						className: #ConfigurationOfNeoJSON;
+						loads: 'Core'
+					 ].
+			spec
+				project: 'OpenSSL'
 				with: [ spec
 						className: #BaselineOfOpenSSL;
-						repository: 'github://PierceNg/OpenSSL-Pharo/src-st' ].
+						repository: 'github://eMaringolo/OpenSSL-Pharo/src-st' 
+"Temporarly until Pull request is merged in upstream repo at https://github.com/PierceNG/OpenSSL-Pharo"].
 			spec
 				project: 'PBKDF2'
 				with: [ spec
@@ -17,4 +27,4 @@ baseline: spec
 				package: 'BIP39Mnemonic-Core'
 				with: [ spec
 						repository: 'github://eMaringolo/pharo-bip39mnemonic/src';
-						requires: #('PBKDF2' 'OpenSSL') ] ]
+						requires: #('NeoJSON' 'PBKDF2' 'OpenSSL') ] ]
