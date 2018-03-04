@@ -6,7 +6,7 @@ Simple implementation of Bitcoin's BIP39 mnemonic and seed generator using the [
 ## Installation
 
 Run:
-```
+```Smalltalk
 Metacello new 
   baseline: 'BIP39Mnemonic'; 
   repository: 'github://eMaringolo/pharo-bip39mnemonic/src'; 
@@ -17,7 +17,7 @@ Metacello new
 
 
 ### Creating a new one
-```
+```Smalltalk
 | m |
 "Creating a mnemonic from Pharo's weak PRNG" 
 m := BIP39Mnemonic generate.
@@ -31,10 +31,10 @@ m seedForPassphrase: 'Pharo'.  "'154ad96ab7ad44d2c47beb3801e278b37b82fe9fc3...'"
 ```
 
 ### Instantiating from existing words
-```
+```Smalltalk
 BIP39Mnemonic fromWords: 'legal winner thank year wave sausage worth useful legal winner thank yellow'.
 
-BIP39Mnemonic fromWords:  "#('legal' 'winner' 'thank' 'year' 'wave' 'sausage' 
+BIP39Mnemonic fromWords:  #('legal' 'winner' 'thank' 'year' 'wave' 'sausage' 
                              'worth' 'useful' 'legal' 'winner' 'thank' 'yellow')
  ```
  
