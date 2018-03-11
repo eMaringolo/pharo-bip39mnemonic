@@ -12,10 +12,8 @@ baseline: spec
 			spec
 				baseline: 'OpenSSL'
 				with: [ spec
-						repository: 'github://eMaringolo/OpenSSL-Pharo/src-st';
-						className: #BaselineOfOpenSSL
-
-					"Temporarly until Pull request is merged in upstream repo at https://github.com/PierceNG/OpenSSL-Pharo" ].
+						repository: 'github://PierceNG/OpenSSL-Pharo/src-st';
+						className: #BaselineOfOpenSSL ].
 			spec
 				configuration: 'PBKDF2'
 				with: [ spec
